@@ -1,0 +1,48 @@
+.todos-list{
+ background-color: white;
+ padding: 10px;
+ border-radius: 5px;
+ margin: 10px;
+ box-shadow: 10px 10px 10px #949292;
+ width: 250px;
+}
+
+.heading-section{
+ display: flex;
+ justify-content: space-between;
+}
+
+.todo-head{
+ font-size: 23px;
+}
+
+.status{
+ font-size: 14px;
+ font-weight: 600;
+}
+
+.description{
+ font-size: 16px;
+ font-weight: 600;
+ padding-left: 10px;
+ padding-top: 5px;
+}
+
+.edit-section{
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 10px;
+ font-size: 15px;
+ font-weight: 600;
+ cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .todo-head{
+   font-size: 18px;
+  }
+
+  .description{
+   font-size: 15px;
+  }
+}

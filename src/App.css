@@ -1,38 +1,79 @@
-.App {
+h1, p {
+  margin: 0;
+ }
+
+ .bg-container{
+  background-color: rgb(234, 221, 221);
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+ }
+ 
+ .heading{
+  background-color: white;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding-top: 5px;
+ }
+ 
+ .text{
+  font-size: 17px;
+  background-color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+ }
+ 
+ .to-do{
+  padding-left: 20px;
+  font-size: 28px;
+ }
+ 
+ .todos-ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 10px;
+   box-sizing: border-box;
+   width: 100%; 
+   list-style-type: none; 
+   margin: 0;
+ }
+ 
+ .no-tasks{
+   font-size: 20px;
+   font-weight: 600;
+   padding-top: 30px;
+   
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .search-container{
+  display: flex;
+  justify-content: space-between;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .search{
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 450px;
+  align-self: center;
+  margin-top: 20px;
+  width: 400px;
+  border: none;
+ }
+
+ @media (max-width: 760px) {
+  .heading{
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text{
+    font-size: 16px;
   }
-}
+
+  .to-do{
+    font-size: 24px;
+  }
+ }
